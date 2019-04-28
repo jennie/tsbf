@@ -11,7 +11,7 @@ const env = process.env.SPIKE_ENV
 
 module.exports = {
   devtool: 'source-map',
-  matchers: { html: '*(**/)*.html', css: '*(**/)*.css', js: '*(**/)*.js' },
+  matchers: { html: '*(**/)*.html', css: '*(**/)*.css'},
   ignore: ['**/layout.html', '**/_*', '**/.*', 'readme.md', 'yarn.lock', 'package-lock.json'],
   reshape: htmlStandards({
     locals: (ctx) => { return { pageId: pageId(ctx), foo: 'bar' } },
