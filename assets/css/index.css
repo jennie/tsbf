@@ -121,7 +121,7 @@ a, a:link {
     }
   }
 }
-#banner {
+#index #banner {
   margin: 0 auto;
   background-size: cover;
   padding: calc(var(--padding-primary)/2);
@@ -138,6 +138,20 @@ a, a:link {
     @media (--tablet), (--desktop) {
       width: 600px;
     }
+  }
+}
+#thank-you #banner {
+  margin: 0 auto;
+  padding: calc(var(--padding-primary)/2);
+  height: 25%;
+  background-position: center;
+  @media (--tablet), (--desktop) {
+    height: 20vh;
+    padding: var(--padding-primary);
+  }
+  @nest & svg {
+    max-height: 100%;
+    
   }
 }
 
@@ -185,4 +199,42 @@ a, a:link {
       }
     }
   }
+}
+
+#signup {
+  background-color: #F2E1F4;
+  text-align: center;
+  @nest & p {
+    margin: 0 0 var(--padding-primary) 0;
+    color: #393782;
+    font-size: 22px;
+  }
+  @nest & form {
+    display: flex;
+    justify-content: center;
+  }
+}
+/* helpers */
+input[type="text"] {
+  padding: 4px 8px;
+  border: solid 2px #393393;
+  font-size: 22px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+button {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 4px 12px;
+  background-color: #393393;
+  border-radius: none;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+}
+
+
+.hidden {
+  display: none;
 }
