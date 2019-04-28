@@ -141,17 +141,10 @@ a, a:link {
   }
 }
 #thank-you #banner {
-  margin: 0 auto;
   padding: calc(var(--padding-primary)/2);
-  height: 25%;
-  background-position: center;
-  @media (--tablet), (--desktop) {
-    height: 20vh;
-    padding: var(--padding-primary);
-  }
+  height: 25vh;
   @nest & svg {
     max-height: 100%;
-    
   }
 }
 
