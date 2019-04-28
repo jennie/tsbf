@@ -27,7 +27,7 @@ body {
   @nest & h2, & h3, & p {
     margin: 0;
   }
-  @nest & a {
+  @nest & a, & a:link {
     color: #fff;
   }
 }
@@ -106,6 +106,7 @@ a, a:link {
     width: 448px;
     @nest & div {
       width: 200px;
+      height: auto;
     }
   }
 }
