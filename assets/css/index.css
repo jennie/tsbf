@@ -24,7 +24,7 @@ body {
   background: #A083ED;
   padding: var(--padding-primary);
   color: #fff;
-  @nest & h2, & p {
+  @nest & h2, & h3, & p {
     margin: 0;
   }
   @nest & a {
