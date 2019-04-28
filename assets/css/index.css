@@ -108,6 +108,12 @@ a, a:link {
   padding: calc(var(--padding-primary)/2);
   justify-content: space-between;
   align-items: center;
+  @nest & div {
+    padding: 0 var(--padding-primary) 0 0;
+    @nest &:last-child {
+      padding: 0;
+    }
+}
   @nest & svg {
     height: 100%;
     width: 100%;
@@ -230,4 +236,16 @@ button {
 
 .hidden {
   display: none;
+}
+
+footer {
+  padding: var(--padding-primary);
+  text-align: center;
+  font-size: 18px;
+  @nest & p {
+    margin: 0 0 6px 0;
+  }
+  @nest & p + p {
+    font-size: 14px;
+  }
 }
