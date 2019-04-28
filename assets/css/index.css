@@ -19,12 +19,10 @@ body {
     font-size: 36px;
   }
 }
-
 div.highlight {
   background: #A083ED;
-  background-image: url('/img/flowers_background.jpg');
+  background-image: url('/img/flowers_background_small.jpg');
   background-size: cover;
-
   padding: var(--padding-primary);
   color: #fff;
   @nest & h2, & h3, & p {
@@ -34,7 +32,6 @@ div.highlight {
     color: #fff;
   }
 }
-
 .container {
   padding: calc(var(--padding-primary)/2);
   @media (--tablet), (--desktop) {
@@ -42,7 +39,6 @@ div.highlight {
   }
 }
 #content {
-
   @nest & p {
     font-weight: 400;
   }
@@ -58,16 +54,13 @@ div.highlight {
       display: block;
       @media (--tablet), (--desktop) {
         display: flex;
-
       }
     }
     @nest & li span.title, & li span.name {
       display: block;
       @media (--tablet), (--desktop) {
         border-bottom: solid 1px #000;
-
       }
-
     }
     @nest & li span {
       font-weight: 700;
@@ -87,16 +80,12 @@ div.highlight {
       @nest & .studio {
         text-transform: uppercase;
         font-size: small;
-
       }
     }
-
   }
 }
 #title h1 {
-
   display: none;
-
 }
 a, a:link {
   color: #000;
@@ -113,7 +102,7 @@ a, a:link {
     @nest &:last-child {
       padding: 0;
     }
-}
+  }
   @nest & svg {
     height: 100%;
     width: 100%;
@@ -137,7 +126,6 @@ a, a:link {
   @media (--tablet), (--desktop) {
     height: 90vh;
     padding: var(--padding-primary);
-
   }
   @nest & svg {
     width: 60%;
@@ -153,10 +141,7 @@ a, a:link {
     max-height: 100%;
   }
 }
-
-
 /* SECTIONS */
-
 #bio {
   background: #393393;
   color: #fff;
@@ -185,7 +170,6 @@ a, a:link {
       /* flex-basis: 100%; */
       max-width: 200px;
       margin: 0 auto;
-
       @media (--tablet), (--desktop) {
         flex-basis: 23%;
         margin: 0;
@@ -199,7 +183,6 @@ a, a:link {
     }
   }
 }
-
 #signup {
   background-color: #F2E1F4;
   text-align: center;
@@ -230,14 +213,10 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
-
 }
-
-
 .hidden {
   display: none;
 }
-
 footer {
   padding: var(--padding-primary);
   text-align: center;
