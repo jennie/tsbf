@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:300,700');
+ @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,700');
 :root {
   --padding-primary: 24px;
 }
@@ -37,7 +37,7 @@ body {
     padding: var(--padding-primary);
   }
   @nest & p {
-    font-weight: 300;
+    font-weight: 400;
   }
   @nest & ul {
     list-style: none;
