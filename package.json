@@ -8,12 +8,15 @@
   },
   "bugs": "https://github.com/jennie/they-might-be-flowers/issues",
   "dependencies": {
+    "postcss-color-mod-function": "^3.0.3",
+    "postcss-mixins": "^6.2.1",
+    "postcss-custom-media": "^7.0.8",
     "reshape-standard": "^3.3.0",
+    "spike": "^2.3.0",
     "spike-css-standards": "^4.0.0",
     "spike-js-standards": "^2.1.0",
     "spike-optimize": "^0.1.2",
-    "spike-page-id": "^1.1.0",
-    "spike": "^2.3.0"
+    "spike-page-id": "^1.1.0"
   },
   "devDependencies": {
     "ava": "^0.19.1",

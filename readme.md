@@ -1,4 +1,4 @@
-# They Might Be Flowers
+# They Should Be Flowers
 
 ## Setup
 
@@ -8,7 +8,4 @@
 - run `npm install`
 - run `spike watch` or `spike compile`
 
-## Testing
-Tests are located in `test/**` and are powered by [ava](https://github.com/sindresorhus/ava)
-- `npm install` to ensure devDeps are installed
-- `npm test` to run test suite
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6f506bfb-e2f1-4022-9ba5-f0890f25b149/deploy-status)](https://app.netlify.com/sites/theymight/deploys)
