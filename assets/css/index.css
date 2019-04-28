@@ -1,4 +1,4 @@
- @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,700');
 :root {
   --padding-primary: 24px;
 }
@@ -8,7 +8,7 @@
 @custom-media --desktop (min-width: 1025px);
 @custom-media --desktop-xl (min-width: 1225px);
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -20,8 +20,11 @@ body {
   }
 }
 
-.highlight {
+div.highlight {
   background: #A083ED;
+  background-image: url('/img/flowers_background.jpg');
+  background-size: cover;
+
   padding: var(--padding-primary);
   color: #fff;
   @nest & h2, & h3, & p {
@@ -31,11 +34,15 @@ body {
     color: #fff;
   }
 }
-#content {
+
+.container {
   padding: calc(var(--padding-primary)/2);
   @media (--tablet), (--desktop) {
     padding: var(--padding-primary);
   }
+}
+#content {
+
   @nest & p {
     font-weight: 400;
   }
@@ -130,6 +137,52 @@ a, a:link {
     width: 60%;
     @media (--tablet), (--desktop) {
       width: 600px;
+    }
+  }
+}
+
+
+/* SECTIONS */
+
+#bio {
+  background: #393393;
+  color: #fff;
+  @nest & h3 {
+    margin: 0 0 var(--padding-primary) 0;
+  }
+  @nest & .container {
+    padding: 24px;
+  }
+  @nest & .bio-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    flex: 1 100%;
+    @nest & p {
+      flex-basis: 100%;
+      font-size: 22px;
+      margin: 0 0 var(--padding-primary) 0;
+      @media (--tablet), (--desktop) {
+        margin: 0;
+        flex-basis: 23%;
+      }
+    }
+    @nest & .img {
+      /* flex-basis: 100%; */
+      max-width: 200px;
+      margin: 0 auto;
+
+      @media (--tablet), (--desktop) {
+        flex-basis: 23%;
+        margin: 0;
+      }
+      @nest & img {
+        margin: 0;
+        width: 100%;
+        display: block;
+        height: auto;
+      }
     }
   }
 }
