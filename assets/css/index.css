@@ -101,12 +101,16 @@ a, a:link {
   padding: calc(var(--padding-primary)/2);
   justify-content: space-between;
   align-items: center;
+  @nest & svg {
+    height: 100%;
+    width: 100%;
+  }
   @media (--tablet), (--desktop) {
     padding: var(--padding-primary);
     width: 448px;
     @nest & div {
       width: 200px;
-      height: auto;
+      height: 100%;
     }
   }
 }
